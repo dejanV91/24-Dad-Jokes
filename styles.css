@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgClr:rgb(235, 253, 236);
+    --buttonClr:rgb(3, 15, 189);
+    --buttonClrHover:rgb(9, 2, 100);
+    --buttonText:#fff;
+    --Text:rgb(44, 43, 43);
+    --radious: 5px;
+    --shadow1:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --shadow2:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+html{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body{
+    background-color: var(--bgClr);
+    min-height: 100vh;
+}
+
+.center{
+    width: 55%;
+    margin: 100px auto;
+}
+
+.button-section{
+    margin-bottom: 40px;
+}
+
+.btn{
+    color: var(--buttonText);
+    background-color: var(--buttonClr);
+    border-radius: var(--radious);
+    padding: 10px;
+    border: none;
+    text-transform: capitalize;
+    box-shadow: var(--shadow1);
+    transition: all 0.25s linear;
+}
+
+.btn:hover{
+    background-color: var(--buttonClrHover);
+    box-shadow: var(--shadow2);
+    cursor: pointer;
+}
+
+.content h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 1.8;
+}
